@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    background-color: gray;
+    
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 2%;
+  } 
+  .Main-Header {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 60px; */
+    background: #13293d;
+    color: aqua;
+    
+  }
+  h1{
+    display:flex;
+    width: 300px;
+    /* border: 15px solid aqua; */
+    background-color: aqua;
+    padding: 20px;
+    /* margin: 0px 20px 20px 0px; */
+    color: gray;
+  }
+  .Header-Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Header-Nav ul {
+    display: flex;
+    padding-right: 25px;
+  }
+  .Header-Nav ul li {
+    display: flex;
+    list-style-type: none;
+    text-decoration:underline;
+    padding-right: 10px;
+    font-display: aqua;
+  }
+  a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .below-header-container{
+    display: flex;
+    height: 100px;
+    width: auto;
+    margin-bottom: 25px;
+    /* background-image: url(assets\images\Header.jpg); */
+    background-size: contain;
+    /* background-position: center; */
+  }
+  
+  #image{
+    
+    height: 50px;
+    width: 50px;
+    margin-bottom: 25px;
+    /* background-size: contain;
+    background-position: center; */
+  }
+  
+  .Container_1 {
+    flex: 1 1 75%;
+    display:flex 
+    
+  }
+
+  .Container_2{
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    display:flex 
+    
+    
+  }
+  .Aside_Box {
+    flex: 1 1 15%;
+    display: flex;
+    padding: 15px;
+    border-right-style: solid;
+    border-width: 5px;
+    justify-content: flex-end;
+    text-align-last: right;
+    /* align-self: flex-end; */
+    color: #fff;
+  }
+
+  .About_Me {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0px 10px 10px 20px;
+    text-align: left;
+  }
+ 
+  .Large_Container {
+    flex: 1 1 100%;
+    display: flex;
+    /* background-image: image(assets/images/surf.jpg); */
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  .Small_Container {
+   flex: 1 1 50%;
+   display: flex;
+   background: #13293d;
+   color: gray;
+   border-style: solid;
+   border-width: 1px;
+  }
+
+  .Container_Header {
+    display: flex;
+    align-items: flex-end;
+  }
+  .Container_Header_p {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .Footer-Nav  {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #d8a47f;
+  }
+
+  .Footer-Nav a{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    block-size: auto;
+    padding: 10px;
+  }
+
+  
+
+  
