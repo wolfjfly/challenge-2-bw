@@ -1,153 +1,259 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial;
-    margin: 0;
-    background-color: gray;
     
   }
-  
-  main {
+body{
+  background-color: lightgray;
+}
+  header{
+    background: #2d2d37;
+    height: 440px;
+  }
+  .top_info{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: 2%;
-  } 
-  .Main-Header {
-    display: flex;
     justify-content: space-between;
-    /* padding: 60px; */
-    background: #13293d;
-    color: aqua;
-    
-  }
-  h1{
-    display:flex;
-    width: 300px;
-    /* border: 15px solid aqua; */
-    background-color: aqua;
-    padding: 20px;
-    /* margin: 0px 20px 20px 0px; */
-    color: gray;
-  }
-  .Header-Nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .Header-Nav ul {
-    display: flex;
-    padding-right: 25px;
-  }
-  .Header-Nav ul li {
-    display: flex;
-    list-style-type: none;
-    text-decoration:underline;
-    padding-right: 10px;
-    font-display: aqua;
-  }
-  a:-webkit-any-link {
-    color: black;
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  .below-header-container{
-    display: flex;
+    align-content: center;
+    width: 100%;
     height: 100px;
-    width: auto;
-    margin-bottom: 25px;
-    /* background-image: url(assets\images\Header.jpg); */
-    background-size: contain;
-    /* background-position: center; */
+  }
+  .name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 400px;
+    padding-right: 25px;
+    background-color: #89c4c8;
+    color: #2d2d37;
+  }
+  .name h1{
+    margin: 0px;
+    font-size: 30pt;
+  }
+  .bottom_info{
+    display: flex;
+    height: 340px;
+    margin: 0;
+  }
+  .header_img{
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+  .header_img img {
+    
+    display: flex;
+    width: 100%;
+    
   }
   
-  #image{
-    
-    height: 50px;
-    width: 50px;
-    margin-bottom: 25px;
-    /* background-size: contain;
-    background-position: center; */
+  .header_img_title {
+    display: flex;
+    height: 10%;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0px;
+    color: #2d2d37;
+    background-color: #89c4c8;
+  }   
+  main {
+    width: 96%;
+    margin: 2rem auto;
   }
-  
-  .Container_1 {
-    flex: 1 1 75%;
-    display:flex 
+  footer{
+    /* flex: 0 0 100%; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-items: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    /* max-width: 1492px; */
+  }
+  .foot{
+    flex:85%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* max-width: 1492px; */
+  }
+  .ext_link {
+    flex:82%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+  }
+  .ext_link a {
+    font-size: 15pt;
+    color: black;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-color:#4f5b72;
+    border-bottom-width: 5px;
+    padding: 10px;
+    transition-timing-function:ease-in ;
+    transition: width 4s;
+  }
+  .ext_link a:hover{
+    color: #2d2d37;
+    background: #4f5b72;
+  }
+  .anchor_link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20pt;
     
+  }
+  .anchor_link a{
+    color: #89c4c8;
+    text-decoration:none;
+    padding: 0px 15px;
+    border-bottom-style: solid;
+    border-bottom-color:#89c4c8;
+    border-bottom-width: 5px ;
+    margin: 0px 20px;
+    transition-timing-function:ease-in ;
+    transition: width 4s;
+  }
+  .anchor_link a:hover{
+    color: #2d2d37;
+    background: #89c4c8;
   }
 
-  .Container_2{
-    flex-wrap: wrap;
-    flex: 1 1 100%;
-    display:flex 
-    
-    
+  .about_me{
+  display: flex;
+  margin-bottom: 20px;
   }
-  .Aside_Box {
-    flex: 1 1 15%;
+
+  .sec_name {
     display: flex;
-    padding: 15px;
+    flex: 15%;
+    padding: 5px;
     border-right-style: solid;
     border-width: 5px;
     justify-content: flex-end;
     text-align-last: right;
-    /* align-self: flex-end; */
-    color: #fff;
-  }
+    color: #4f5b72;
+    font-size: 28pt;
 
-  .About_Me {
-    flex: 1 1 100%;
-    flex-wrap: wrap;
+  }
+  .sec_name h1{
     display: flex;
-    padding: 0px 10px 10px 20px;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .paragraph{
+    flex:85%;
     text-align: left;
   }
- 
-  .Large_Container {
-    flex: 1 1 100%;
+  .paragraph p{
+    margin: 0px 25px;
+  }
+  .work{
     display: flex;
-    /* background-image: image(assets/images/surf.jpg); */
-    color: #fff;
+    margin-bottom: 20px;
+   /* flex-wrap: wrap; */
+  }
+  .box{
+    flex:85%;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+  }
+  .big{
+    max-width: 96%;
+    margin: 2%;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .big img{
+    width: 100%;
+    border-color: #89c4c8;
+    border-width: 10px;
     border-style: solid;
-    border-width: 1px;
+  } 
+  .big img:hover{
+    filter:hue-rotate(90deg) ;
+    /* filter: drop-shadow(16px 16px 20px rgb(0, 255, 191)); */
+    opacity: 0.2;
+  }
+  .small{
+    max-width: 46%;
+    margin: 2%
   }
   
-  .Small_Container {
-   flex: 1 1 50%;
-   display: flex;
-   background: #13293d;
-   color: gray;
-   border-style: solid;
-   border-width: 1px;
+  .small img{
+    width: 100%;
+    border-color: #89c4c8;
+    border-width: 10px;
+    border-style: solid;
   }
-
-  .Container_Header {
-    display: flex;
-    align-items: flex-end;
+  .small img:hover{
+    filter:hue-rotate(90deg) ;
+    opacity: 0.2;
   }
-  .Container_Header_p {
+  .foot_nav{
+    flex: 0 0 100%;
     display: flex;
-    align-items: flex-end;
-  }
-
-  .Footer-Nav  {
-    flex: 1 1 100%;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    flex-direction: row;
-    background-color: #d8a47f;
+    justify-items: center;
   }
-
-  .Footer-Nav a{
+  /* 
+What does the flex-direction property define?
+It defines in which direction the container wants to stack the flex items
+What is it doing here? 
+We are telling the main body and navbar to stack vertically in a column
+*/
+@media screen and (max-width: 980px) {
+  main,
+  nav, .about_me, .work, .foot{
+    flex-direction: column;
+  }
+  .sec_name{
+    border-bottom-style: solid;
+    border-right-style: none;
+    justify-content: left;
+  }
+  .top_info .name{
+    width: 100%;
+    justify-content: center;
+  }
+  .anchor_link{
     display: flex;
-    list-style-type: none;
-    text-align: center;
-    block-size: auto;
-    padding: 10px;
+    width: 100%;
+    justify-content: space-around;
   }
 
-  
-
+  }
+  @media screen and (max-width: 768px) {
+    main,
+    nav, .about_me, .work, .foot, .box{
+      flex-direction: column;
+    }
+    .small{
+      max-width: 96%;
+      align-items: center;
+      align-content: center;
+    }
+    .sec_name{
+      border-bottom-style: solid;
+      border-right-style: none;
+      justify-content: left;
+    }
+    .top_info .name{
+      width: 100%;
+      justify-content: center;
+    }
+    .anchor_link{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+    }
   
